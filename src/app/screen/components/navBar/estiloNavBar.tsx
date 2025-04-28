@@ -1,16 +1,46 @@
+import styled from "styled-components";
 
+const StyledWrapper = styled.div`
+
+.navbar-icon {
+  margin-top: auto; /* Empurra o ícone para o final */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+}
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    width: 250px; /* Largura da barra lateral */
+    
+    color: #fff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+.navbar-links {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  text-align: center; 
+}
+ 
 .container {
     display: flex;
     flex-direction: row;
   }
-  
+
   .radio-wrapper {
     position: relative;
     height: 38px;
-    width: 200px;
-    margin-top: 30px;
+    width: 84px;
+    margin: 50px;
   }
-  
+
   .radio-wrapper .input {
     position: absolute;
     height: 100%;
@@ -20,7 +50,7 @@
     z-index: 10;
     opacity: 0;
   }
-  
+
   .btn {
     --primary: #f5434f;
     --shadow-primary: #631e29;
@@ -132,17 +162,17 @@
     transition: background 0.2s, 0.3s;
     font-family: "Orbitron", sans-serif; /* Orbitron font */
   }
-  
+
   .input:checked + .btn {
     --primary: #161a25;
     --shadow-primary: #ffffff;
   }
-  
+
   .input:hover + .btn {
     --primary: #cc133c;
     --font-size: 11px;
   }
-  
+
   .btn:after,
   .btn:before {
     content: "";
@@ -154,16 +184,16 @@
     clip-path: var(--clip);
     z-index: -1;
   }
-  
+
   .btn:before {
     background: var(--shadow-primary);
     transform: translate(var(--border), 0);
   }
-  
+
   .btn:after {
     background: var(--primary);
   }
-  
+
   .btn__tag {
     position: absolute;
     padding: 1px 4px;
@@ -175,7 +205,7 @@
     color: hsl(0, 0%, 0%);
     font-size: var(--label-size);
   }
-  
+
   .btn__glitch {
     position: absolute;
     top: calc(var(--border) * -1);
@@ -188,16 +218,16 @@
     animation: glitch 2s infinite;
     display: none;
   }
-  
+
   .input:hover + .btn .btn__glitch {
     display: block;
   }
-  
+
   .input:checked + .btn .btn__glitch {
     display: block;
     animation: glitch 5s infinite;
   }
-  
+
   .btn__glitch:before {
     content: "";
     position: absolute;
@@ -209,87 +239,87 @@
     background: var(--primary);
     z-index: -1;
   }
-  
+
   @keyframes glitch {
     0% {
       clip-path: var(--clip-one);
     }
-  
+
     2%,
     8% {
       clip-path: var(--clip-two);
       transform: translate(calc(var(--shimmy-distance) * -1%), 0);
     }
-  
+
     6% {
       clip-path: var(--clip-two);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
-  
+
     9% {
       clip-path: var(--clip-two);
       transform: translate(0, 0);
     }
-  
+
     10% {
       clip-path: var(--clip-three);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
-  
+
     13% {
       clip-path: var(--clip-three);
       transform: translate(0, 0);
     }
-  
+
     14%,
     21% {
       clip-path: var(--clip-four);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
-  
+
     25% {
       clip-path: var(--clip-five);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
-  
+
     30% {
       clip-path: var(--clip-five);
       transform: translate(calc(var(--shimmy-distance) * -1%), 0);
     }
-  
+
     35%,
     45% {
       clip-path: var(--clip-six);
       transform: translate(calc(var(--shimmy-distance) * -1%));
     }
-  
+
     40% {
       clip-path: var(--clip-six);
       transform: translate(calc(var(--shimmy-distance) * 1%));
     }
-  
+
     50% {
       clip-path: var(--clip-six);
       transform: translate(0, 0);
     }
-  
+
     55% {
       clip-path: var(--clip-seven);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
-  
+
     60% {
       clip-path: var(--clip-seven);
       transform: translate(0, 0);
     }
-  
+
     31%,
     61%,
     100% {
       clip-path: var(--clip-four);
     }
   }
-  
+
   .number {
     background: var(--shadow-primary);
     color: #323232;
@@ -303,11 +333,6 @@
     left: 81%;
     line-height: 6.2px;
   }
-  .navbar-links {
-    list-style: none; /* Remove os pontinhos */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    display: flex; /* Exibe os itens em linha */
-    gap: 1rem; /* Espaçamento entre os itens */
-    justify-content: center; /* Centraliza os itens */
-  }
+`;
+
+export default StyledWrapper;

@@ -10,6 +10,7 @@
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
+    padding-bottom: 50px;
   }
   
   a {

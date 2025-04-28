@@ -1,51 +1,63 @@
-import './estiloNav.css';
+"use client";
+
+import React from "react";
+import StyledWrapper from "./estiloNavBar";
+import Loader from "./icon/icon"; // Importa o ícone
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
-  
-      <ul className="navbar-links">
-        <li>
-          <div className="radio-wrapper">
-            <input type="radio" id="aboutme" name="btn" className="input" />
-            <div className="btn">
-              <span aria-hidden="true">_</span>Sobre Mim
-              <span aria-hidden="true" className="btn__glitch">_Sobre_Mim</span>
-              <label className="number">r1</label>
+    <StyledWrapper>
+      <div className="navbar">
+        <div className="navbar-logo">
+         
+          Giovanni_Gustavo
+        </div>
+        <ul className="navbar-links">
+          <li>
+            <div className="radio-wrapper">
+              <input type="radio" id="home" name="menu" className="input" />
+              <div className="btn">
+                <span aria-hidden>_</span>Home
+                <span aria-hidden className="btn__glitch">_Home_</span>
+                <label className="number">1</label>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div className="radio-wrapper">
-            <input type="radio" id="skills" name="btn" className="input" />
-            <div className="btn">
-              <span aria-hidden="true">_</span>Habilidades
-              <span aria-hidden="true" className="btn__glitch">_Habilidades</span>
-              <label className="number">r2</label>
+          </li>
+          <li>
+            <div className="radio-wrapper">
+              <input type="radio" id="about" name="menu" className="input" />
+              <div className="btn">
+                <span aria-hidden>_</span>Sobre
+                <span aria-hidden className="btn__glitch">_Sobre_</span>
+                <label className="number">2</label>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div className="radio-wrapper">
-            <input type="radio" id="projects" name="btn" className="input" />
-            <div className="btn">
-              <span aria-hidden="true">_</span>Projetos
-              <span aria-hidden="true" className="btn__glitch">_Projetos</span>
-              <label className="number">r3</label>
+          </li>
+          <li>
+            <div className="radio-wrapper">
+              <input type="radio" id="projects" name="menu" className="input" />
+              <div className="btn">
+                <span aria-hidden>_</span>Projetos
+                <span aria-hidden className="btn__glitch">_Projetos_</span>
+                <label className="number">3</label>
+              </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div className="radio-wrapper">
-            <input type="radio" id="contactme" name="btn" className="input" />
-            <div className="btn">
-              <span aria-hidden="true">_</span>Contato
-              <span aria-hidden="true" className="btn__glitch">_Contato</span>
-              <label className="number">r4</label>
+          </li>
+          <li>
+            <div className="radio-wrapper">
+              <input type="radio" id="contact" name="menu" className="input" />
+              <div className="btn">
+                <span aria-hidden>_</span>Contato
+                <span aria-hidden className="btn__glitch">_Contato_</span>
+                <label className="number">4</label>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
+          </li>
+        </ul>
+        <div className="navbar-icon">
+          <Loader />
+        </div>
+        </div>
+    </StyledWrapper>
   );
 }
