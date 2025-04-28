@@ -1,0 +1,22 @@
+:root {
+    --background-color: #121212; /* Fundo escuro */
+    --text-color: #ffffff; /* Cor do texto */
+    --primary-color: #1e88e5; /* Cor primária para links ou destaques */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
