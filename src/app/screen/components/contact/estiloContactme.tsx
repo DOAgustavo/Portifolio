@@ -30,9 +30,10 @@ const StyledContactMe = styled.section`
     position: relative;
     display: inline-block;
     padding: 10px 20px; /* Reduz o padding */
-    border: 1.5px  solid #0078d7; /* Define a borda com a cor personalizada */
+    border: none; /* Remove todas as bordas */
+    border-bottom: 1.5px solid #0078d7; /* Define a borda apenas na parte inferior */
     text-transform: uppercase;
-    color:rgb(255, 255, 255); /* Define a cor do texto */
+    color: rgb(255, 255, 255); /* Define a cor do texto */
     text-decoration: none;
     font-weight: 500; /* Reduz o peso da fonte */
     font-size: 16px; /* Reduz o tamanho da fonte */
@@ -46,7 +47,6 @@ const StyledContactMe = styled.section`
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% - -2px);
-    
     transition: 0.3s ease-out;
     transform: scaleY(1);
   }
@@ -74,7 +74,7 @@ const StyledContactMe = styled.section`
   }
 
   .btn2:hover {
-    border: 1.5px solid #f5434f; /* Mantém a borda consistente no hover */
+    border-bottom: 1.5px solid #f5434f; /* Mantém a borda inferior consistente no hover */
     color: #fff; /* Altera a cor do texto no hover */
     background-color: #f5434f; /* Adiciona fundo com a cor personalizada no hover */
   }
