@@ -5,6 +5,7 @@ import Projects from './components/projects/Projects';
 import ContactMe from './components/contact/ContactMe';
 import Footer from './components/footer/footer';
 
+
 export default function Portfolio() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Portfolio() {
       <Projects />
       <ContactMe />
       <Footer />
+      
 
     </div>
   );

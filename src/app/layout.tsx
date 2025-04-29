@@ -1,5 +1,7 @@
-// filepath: c:\src\Portifolio\doagustavo\src\app\layout.tsx
-import './globals.css';
+"use client";
+
+import "./globals.css"; // Importa o arquivo CSS global
+import { StyledBody } from "./globals";
 
 export default function RootLayout({
   children,
@@ -7,8 +9,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <StyledBody>{children}</StyledBody>
     </html>
   );
 }

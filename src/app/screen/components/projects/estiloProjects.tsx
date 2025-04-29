@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
     position: relative;
     width: 350px;
     height: 250px;
-    background-image: url('images/foto.jpg');
+    background-image: url('images/servicos.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -36,7 +36,7 @@ const StyledWrapper = styled.div`
     justify-content: center;
     overflow: hidden;
     perspective: 1000px;
-    box-shadow: 0 0 0 2px #f5434f;
+    box-shadow: 0 0 0 2px #0078d7;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 

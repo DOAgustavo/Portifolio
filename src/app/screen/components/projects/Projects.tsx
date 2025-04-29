@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="card__content">
               <p className="card__title">Card Title 1</p>
               <p className="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Descrição do projeto 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
           </div>
@@ -21,7 +21,7 @@ const Projects = () => {
             <div className="card__content">
               <p className="card__title">Card Title 2</p>
               <p className="card__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                descriação do projeto Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
           </div>

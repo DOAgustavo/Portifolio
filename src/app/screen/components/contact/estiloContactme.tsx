@@ -30,7 +30,7 @@ const StyledContactMe = styled.section`
     position: relative;
     display: inline-block;
     padding: 10px 20px; /* Reduz o padding */
-    border: 1.5px solid #f5434f; /* Define a borda com a cor personalizada */
+    border: 1.5px  solid #0078d7; /* Define a borda com a cor personalizada */
     text-transform: uppercase;
     color:rgb(255, 255, 255); /* Define a cor do texto */
     text-decoration: none;
@@ -46,7 +46,7 @@ const StyledContactMe = styled.section`
     left: -2px;
     width: calc(100% + 4px);
     height: calc(100% - -2px);
-    background-color: #121212; /* Fundo escuro */
+    
     transition: 0.3s ease-out;
     transform: scaleY(1);
   }
