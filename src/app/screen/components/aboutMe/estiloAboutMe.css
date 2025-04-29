@@ -35,11 +35,54 @@
 .aboutme-text h2 {
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
-    color: #f5434f; /* Título com a cor padrão */
+    
 }
 
 .aboutme-text p {
     margin: 0;
     font-size: 1rem;
     color: #d1d1d1; /* Texto com um tom claro para contraste */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        height: auto; /* Ajusta a altura automaticamente */
+        width: 90%; /* Reduz a largura para caber melhor */
+        padding: 1.5rem;
+    }
+
+    .aboutme-image {
+        width: 120px; /* Reduz o tamanho da imagem */
+        height: 120px;
+    }
+
+    .aboutme-text h2 {
+        font-size: 1.2rem; /* Reduz o tamanho do título */
+    }
+
+    .aboutme-text p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        gap: 1rem; /* Reduz o espaçamento entre os elementos */
+    }
+
+    .aboutme-image {
+        width: 100px; /* Reduz ainda mais o tamanho da imagem */
+        height: 100px;
+    }
+
+    .aboutme-text h2 {
+        font-size: 1rem; /* Ajusta o tamanho do título */
+    }
+
+    .aboutme-text p {
+        font-size: 0.8rem; /* Ajusta o tamanho do texto */
+    }
 }

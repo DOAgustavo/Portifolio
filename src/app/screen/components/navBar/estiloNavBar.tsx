@@ -3,11 +3,13 @@ import styled from "styled-components";
 const StyledWrapper = styled.div`
 
 .navbar-icon {
-  margin-top: auto; /* Empurra o ícone para o final */
+  margin-top: auto;
+  margin-bottom: 60px; 
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center;
 }
+
   .navbar {
     position: fixed;
     top: 0;
@@ -20,7 +22,7 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+
   }
 .navbar-links {
   list-style: none; 
@@ -333,6 +335,12 @@ const StyledWrapper = styled.div`
     left: 81%;
     line-height: 6.2px;
   }
+
+  @media (max-width: 768px) {
+  .navbar {
+    display: none; /* Esconde o Navbar em telas pequenas */
+  }
+}
 `;
 
 export default StyledWrapper;

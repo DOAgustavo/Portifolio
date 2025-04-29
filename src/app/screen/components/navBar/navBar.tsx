@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="navbar">
         <div className="navbar-logo">
          
-          Giovanni_Gustavo
+       
         </div>
         <ul className="navbar-links">
           <li>
