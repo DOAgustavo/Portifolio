@@ -5,7 +5,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/screen'); // Redireciona para a página do portfólio
+    router.push('/screen/pages/home'); 
   }, [router]);
 
   return null;

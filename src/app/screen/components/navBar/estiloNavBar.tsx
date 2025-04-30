@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 const StyledWrapper = styled.div`
 
-.navbar-icon {
+  .navbar-icon {
   margin-top: auto;
   margin-bottom: 60px; 
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center;
-}
+  }
 
   .navbar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh; /* Ocupa toda a altura da viewport */
-    width: 250px; /* Largura da barra lateral */
+    width: 200px; 
     
     color: #fff; /* Cor do texto */
     display: flex;
@@ -45,12 +45,14 @@ const StyledWrapper = styled.div`
 
   .radio-wrapper .input {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    cursor: pointer;
-    z-index: 10;
-    opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
   }
 
   .btn {

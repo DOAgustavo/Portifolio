@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
     position: relative;
     width: 350px;
     height: 250px;
-    background-image: url('images/servicos.jpg');
+    background-image: url('/images/servicos.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
